@@ -30,7 +30,7 @@ from AirlinePassengers import UsefulFunctions
 
 
 #Time series analysis in Python
-dataset = pd.read_csv('/Users/coding/Documents/GitHub/TimeSeriesAnalysisWithPython/data/AirPassengers.csv')
+dataset = pd.read_csv('./AirlinePassengers.csv')
 #Parse strings to datetime type
 dataset['Month'] = pd.to_datetime(dataset['Month'], infer_datetime_format=True)
 indexedDataset = dataset.set_index(['Month'])
